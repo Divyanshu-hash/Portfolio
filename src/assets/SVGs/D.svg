@@ -1,0 +1,11 @@
+<svg width="60" height="72" viewBox="0 0 60 72" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="GradientD">
+            <stop stop-color="#6600FF" offset="0%" />
+            <stop stop-color="#ff00bf" offset="100%" />
+        </linearGradient>
+    </defs>
+    <g id="Divyanshu" stroke-linecap="round" fill-rule="evenodd" stroke-width="0" fill="url(#GradientD)">
+        <text x="30" y="60" font-family="Ubuntu, Arial, sans-serif" font-size="70" font-weight="bold" text-anchor="middle">D</text>
+    </g>
+</svg>

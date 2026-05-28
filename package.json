@@ -1,0 +1,44 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "version": "2.0.0",
+  "homepage": "https://github.com/DivyanshuGiri/portfolio",
+  "author": {
+    "name": "DivyanshuGiri",
+    "email": "rishugiri056@gmail.com",
+    "url": "https://divyanshugiri.netlify.app/"
+  },
+  "scripts": {
+    "dev": "npm run build:themes && vite --open --host",
+    "start": "npm run build:themes && vite",
+    "build:themes": "tsx scripts/generateThemes.ts",
+    "build": "npm run build:themes && tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "@tailwindcss/vite": "^4.2.4",
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.474.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/parser": "^8.59.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^6.0.11"
+  }
+}
