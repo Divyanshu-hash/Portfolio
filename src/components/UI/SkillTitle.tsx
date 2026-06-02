@@ -6,8 +6,8 @@ type Props = {
 export default function SkillTitle({ title, color }: Props) {
   return (
     <div className={`Fade_Up Title-Tag relative flex_center ${color || ""}`}>
-      <p className="text-[1.6em]">{title}</p>
-      <span className="text-[1.5em]">{"()"}</span>
+      <p className="text-[1.3em] sm:text-[1.6em]">{title}</p>
+      <span className="text-[1.2em] sm:text-[1.5em]">{"()"}</span>
     </div>
   );
 }

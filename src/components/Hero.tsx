@@ -8,7 +8,7 @@ export default function Hero({ config }: Props) {
   return (
     <section
       id="Hero"
-      className="w-full h-[calc(100vh-4rem)] py-4 bg-background flex justify-evenly lg:justify-around items-center flex-col-reverse lg:flex-row overflow-hidden"
+      className="w-full min-h-[calc(100dvh-4rem)] py-4 bg-background flex justify-evenly lg:justify-around items-center flex-col-reverse lg:flex-row overflow-hidden"
     >
       {/* Hero Intro Info */}
       <div className="w-full lg:w-fit flex justify-start items-center flex-col gap-8">
@@ -45,7 +45,7 @@ export default function Hero({ config }: Props) {
       </div>
 
       {/* Hero Orbit Animation */}
-      <div className="Hero_Orbit relative flex_center w-[340px] lg:w-[500px] aspect-square">
+      <div className="Hero_Orbit relative flex_center w-[280px] sm:w-[340px] lg:w-[500px] aspect-square">
         <div
           id="avatarImage"
           role="button"

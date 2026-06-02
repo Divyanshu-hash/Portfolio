@@ -13,9 +13,9 @@ export default function SectionTitle({ title, color, className = "", children }:
       <div
         className={`Fade_Up Title-Tag Title_Line relative flex items-center open ${color || ""}`}
       >
-        <span className="text-[1.5em]">{"<"}</span>
-        <p className="text-[1.6em]">{title}</p>
-        <span className="text-[1.5em]">{">"}</span>
+        <span className="text-[1.2em] sm:text-[1.5em]">{"<"}</span>
+        <p className="text-[1.3em] sm:text-[1.6em]">{title}</p>
+        <span className="text-[1.2em] sm:text-[1.5em]">{">"}</span>
       </div>
 
       {children}
@@ -23,9 +23,9 @@ export default function SectionTitle({ title, color, className = "", children }:
       <div
         className={`Fade_Up Title-Tag Title_Line relative flex items-center close ${color || ""}`}
       >
-        <span className="text-[1.5em]">{"</"}</span>
-        <p className="text-[1.4em]">{title}</p>
-        <span className="text-[1.5em]">{">"}</span>
+        <span className="text-[1.2em] sm:text-[1.5em]">{"</"}</span>
+        <p className="text-[1.1em] sm:text-[1.4em]">{title}</p>
+        <span className="text-[1.2em] sm:text-[1.5em]">{">"}</span>
       </div>
     </div>
   );

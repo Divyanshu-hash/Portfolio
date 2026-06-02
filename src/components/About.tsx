@@ -8,13 +8,12 @@ type Props = {
 
 export default function About({ config }: Props) {
   return (
-    <section id="about" className="w-full min-h-screen py-4 pt-14 bg-background">
+    <section id="about" className="w-full py-4 pt-14 bg-background min-h-screen">
       <SectionTitle
         title="About Me"
         color="primary"
-        className="h-screen flex flex-col justify-center"
       >
-        <div className="flex_center flex-col lg:flex-row w-full h-full py-10 gap-8">
+        <div className="flex_center flex-col lg:flex-row w-full py-10 gap-8 lg:h-full">
           <img
             src={Avatar_250 as unknown as string}
             alt="About_Avatar"
@@ -28,7 +27,7 @@ export default function About({ config }: Props) {
           <div className="Fade_Up w-full md:w-[80%] lg:w-[60%] flex justify-center items-start flex-col gap-4 lg:border-l border-primary py-8 lg:pl-10">
             <h2 className="Fade_Up text-[1.5em] font-bold">Hey there! 👋🏻</h2>
             {config.description?.map((para: string, idx: number) => (
-              <p key={idx} className="Fade_Up text-justify">
+              <p key={idx} className="Fade_Up text-center sm:text-justify">
                 {para}
               </p>
             ))}
