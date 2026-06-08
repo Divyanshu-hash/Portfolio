@@ -166,36 +166,22 @@ export default function ProjectDetails() {
           )}
 
           {/* Project Description */}
-          <div className="Fade_Up w-full mt-6 px-2 md:px-4">
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-md p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+          <div className="Fade_Up mt-6">
+            <div className="group relative overflow-hidden rounded-3xl border border-white/10 p-6">
 
-              {/* Gradient Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
-              {/* Header */}
-              <div className="relative flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-primary/10 border border-primary/20">
-                  <span className="text-lg">🚀</span>
-                </div>
+              <span className="text-primary text-sm uppercase tracking-[0.3em] font-semibold">
+                PROJECT OVERVIEW
+              </span>
 
-                <div>
-                  <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">
-                    Project Overview
-                  </p>
+              <h3 className="text-2xl font-bold mt-3 mb-4">
+                Building Intelligent Solutions
+              </h3>
 
-                  <h3 className="text-lg font-bold mt-1">
-                    About the Project
-                  </h3>
-                </div>
-              </div>
-
-              {/* Content */}
-              <p className="relative text-[1rem] md:text-[1.05rem] leading-8 text-muted-foreground">
+              <p className="text-muted-foreground leading-8 text-[1rem]">
                 {project.description}
               </p>
-
-              {/* Bottom Accent */}
-              <div className="mt-5 h-[2px] w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
             </div>
           </div>
         </div>
