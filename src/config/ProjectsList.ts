@@ -107,16 +107,7 @@ export const TECH_STACK = {
  * These features can be easily referenced and reused in project configurations to maintain consistency and reduce redundancy.
  * To add a new common feature, simply create a new property in the COMMON_FEATURES object with the appropriate title and description.
  */
-const COMMON_FEATURES = {
-    Responsive: {
-        title: "Responsive Design",
-        description: "Enjoy a seamless experience across devices with a responsive design that adapts to various screen sizes and orientations."
-    },
-    SEO: {
-        title: "SEO Optimization",
-        description: "Crafted with SEO best practices, ensuring optimal visibility on search engines. From keyword-rich content to streamlined meta tags and efficient site architecture."
-    }
-}
+
 //#endregion
 
 
