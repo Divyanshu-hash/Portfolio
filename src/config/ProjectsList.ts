@@ -164,8 +164,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "Travel Planning Agent",
-        shortDescription: "AI-powered travel assistant that creates personalized itineraries, smart destination recommendations, and seamless trip planning experiences.",
-        description: "AI-powered travel assistant that creates personalized itineraries, smart destination recommendations, and seamless trip planning experiences.",
+        shortDescription: "An intelligent AI-powered travel planner that transforms simple travel requests into personalized, budget-aware itineraries using agentic workflows.",
+        description: "An intelligent AI-powered travel planner that transforms simple travel requests into personalized, budget-aware itineraries. Using agentic workflows, real-time travel data, weather forecasts, and smart budget allocation, it automatically creates detailed day-by-day travel plans tailored to each user's preferences.",
         logoImage: LOGOS.ArmsLogo,
         previewImage: SCREENSHOTS.TravelPlanningAgentShots,
         deviceMockupImage: SCREENSHOTS.TravelPlanningAgentShots,
@@ -174,13 +174,19 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://github.com/Divyanshu-hash/travel-planning-agent",
         sourceUrl: "https://github.com/Divyanshu-hash/travel-planning-agent",
         technologies: [
+            TECH_STACK.LangGraph,
             TECH_STACK.Python,
             TECH_STACK.Reactjs,
-            TECH_STACK.Nodejs
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Smart Travel Planning",
+                description: "Understands natural language travel requests, extracts trip requirements, and automatically generates personalized itineraries with destinations, activities, accommodations, and budget recommendations."
+            },
+            {
+                title: "Real-Time Research & Optimization",
+                description: "Combines weather forecasts, hotel searches, attraction discovery, currency conversion, and budget validation to create practical, data-driven travel plans while staying within user-defined constraints."
+            },
         ],
         logoSize: 50,
         versions: []
@@ -188,8 +194,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "RepoTalk",
-        shortDescription: "AI-driven GitHub repository assistant that helps developers understand codebases, summarize repositories, and improve collaboration workflows.",
-        description: "AI-driven GitHub repository assistant that helps developers understand codebases, summarize repositories, and improve collaboration workflows.",
+        shortDescription: "An AI-powered repository intelligence platform that helps developers understand, analyze, and interact with GitHub repositories through natural language using RAG.",
+        description: "An AI-powered repository intelligence platform that helps developers understand, analyze, and interact with GitHub repositories through natural language. By combining Retrieval-Augmented Generation (RAG) with large language models, RepoTalk transforms complex codebases into conversational knowledge, making onboarding, code exploration, and documentation understanding significantly faster.",
         logoImage: LOGOS.VortexaLogo,
         previewImage: SCREENSHOTS.RepoTalkShots,
         deviceMockupImage: SCREENSHOTS.RepoTalkShots,
@@ -198,13 +204,19 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://github.com/Divyanshu-hash/RepoTalk",
         sourceUrl: "https://github.com/Divyanshu-hash/RepoTalk",
         technologies: [
+            TECH_STACK.FastAPI,
             TECH_STACK.Python,
-            TECH_STACK.Nextjs,
-            TECH_STACK.TypeScript
+            TECH_STACK.GitHub,
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Intelligent Repository Understanding",
+                description: "Analyzes repository structure, source code, and documentation to generate contextual explanations, summaries, and insights. Developers can quickly understand unfamiliar projects without manually reading hundreds of files."
+            },
+            {
+                title: "Conversational Code Exploration",
+                description: "Enables natural language interactions with GitHub repositories, allowing users to ask questions about architecture, functionality, dependencies, and implementation details while receiving accurate, context-aware responses."
+            },
         ],
         logoSize: 50,
         versions: []
@@ -212,8 +224,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "ResolveX",
-        shortDescription: "Intelligent problem-solving platform designed to automate workflows, enhance productivity, and deliver smart user assistance.",
-        description: "Intelligent problem-solving platform designed to automate workflows, enhance productivity, and deliver smart user assistance.",
+        shortDescription: "An enterprise-grade complaint and issue management platform that streamlines grievance handling through intelligent categorization, automated escalation, and real-time analytics.",
+        description: "ResolveX is an enterprise-grade complaint and issue management platform designed for colleges, hostels, offices, housing societies, and organizations. It streamlines grievance handling through intelligent categorization, automated escalation, role-based workflows, and real-time analytics, ensuring transparency, accountability, and faster issue resolution.",
         logoImage: LOGOS.NextmartLogo,
         previewImage: SCREENSHOTS.ResolveXShots,
         deviceMockupImage: SCREENSHOTS.ResolveXShots,
@@ -223,12 +235,18 @@ export const PROJECTS_LIST: IProject[] = [
         sourceUrl: "https://github.com/Divyanshu-hash/ResolveX",
         technologies: [
             TECH_STACK.Reactjs,
-            TECH_STACK.Nodejs,
-            TECH_STACK.MongoDB
+            TECH_STACK.FastAPI,
+            TECH_STACK.MySQL,
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Smart Complaint Management",
+                description: "Enables users to submit complaints with supporting evidence while automatically categorizing issues, assigning priorities, tracking status changes, and maintaining a complete audit trail throughout the resolution lifecycle."
+            },
+            {
+                title: "Automated Escalation & Analytics",
+                description: "Monitors unresolved complaints against predefined SLAs, automatically escalates overdue cases, and provides comprehensive dashboards with performance metrics, resolution trends, staff productivity insights, and user feedback analysis."
+            },
         ],
         logoSize: 50,
         versions: []
@@ -236,8 +254,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "Steganographic",
-        shortDescription: "Secure image-based steganography system for hiding and retrieving sensitive information using advanced image processing techniques.",
-        description: "Secure image-based steganography system for hiding and retrieving sensitive information using advanced image processing techniques.",
+        shortDescription: "A secure full-stack steganography platform that enables users to hide and extract text, images, and audio within digital images using LSB steganography.",
+        description: "Steganographic is a secure full-stack steganography platform that enables users to hide and extract text, images, and audio files within digital images using LSB (Least Significant Bit) steganography. Built with a modern React frontend and FastAPI backend, the platform combines secure authentication, intelligent file processing, and seamless media handling to provide a practical solution for confidential data transmission.",
         logoImage: LOGOS.XReconLogo,
         previewImage: SCREENSHOTS.SteganographicShots,
         deviceMockupImage: SCREENSHOTS.SteganographicShots,
@@ -246,12 +264,19 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://github.com/Divyanshu-hash/Steganographic",
         sourceUrl: "https://github.com/Divyanshu-hash/Steganographic",
         technologies: [
-            TECH_STACK.Python,
-            TECH_STACK.Reactjs
+            TECH_STACK.FastAPI,
+            TECH_STACK.Reactjs,
+            TECH_STACK.OpenCV,
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Multi-Format Secure Data Hiding",
+                description: "Supports embedding text, images, and audio files inside carrier images while preserving image quality. The system automatically processes payloads, normalizes image formats, and ensures reliable encoding and decoding of hidden information."
+            },
+            {
+                title: "Secure Media Management & Authentication",
+                description: "Provides JWT-based authentication, protected user access, secure file uploads, downloadable encoded content, and intelligent file-type detection, creating a complete end-to-end platform for secure steganographic communication."
+            },
         ],
         logoSize: 50,
         versions: []
@@ -259,8 +284,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "GitPilot-MCP",
-        shortDescription: "AI-powered Git workflow assistant that streamlines repository management, automation, and developer productivity.",
-        description: "AI-powered Git workflow assistant that streamlines repository management, automation, and developer productivity.",
+        shortDescription: "An autonomous GitHub contribution agent powered by the Model Context Protocol (MCP) that automates issue analysis, code generation, testing, and pull request workflows.",
+        description: "GitPilot MCP is an autonomous GitHub contribution agent that streamlines the entire open-source development workflow. Powered by the Model Context Protocol (MCP), it can analyze issues, understand codebases, generate patches, run tests, create pull requests, handle review feedback, and synchronize repositories automatically, helping developers contribute faster and more efficiently.",
         logoImage: LOGOS.YoatubeLogo,
         previewImage: SCREENSHOTS.GitPilotMCPShots,
         deviceMockupImage: SCREENSHOTS.GitPilotMCPShots,
@@ -269,12 +294,19 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://github.com/Divyanshu-hash/GitPilot-MCP",
         sourceUrl: "https://github.com/Divyanshu-hash/GitPilot-MCP",
         technologies: [
-            TECH_STACK.TypeScript,
-            TECH_STACK.Nodejs
+            TECH_STACK.Python,
+            TECH_STACK.GitHub,
+            TECH_STACK.LangChain,
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Autonomous Open-Source Contributions",
+                description: "Automates the complete GitHub contribution lifecycle, from repository forking and issue analysis to code generation, testing, commits, and pull request creation. The agent minimizes manual effort while following real-world open-source development practices."
+            },
+            {
+                title: "Intelligent Code Understanding & PR Management",
+                description: "Uses Retrieval-Augmented Generation (RAG) to understand repository context, generate targeted code changes, detect merge conflicts, synchronize with upstream repositories, and update pull requests based on maintainer feedback."
+            },
         ],
         logoSize: 50,
         versions: []
@@ -282,8 +314,8 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         name: "Real-Time Emotion Detection",
-        shortDescription: "Deep learning-based emotion recognition system that analyzes facial expressions and delivers real-time emotion insights.",
-        description: "Deep learning-based emotion recognition system that analyzes facial expressions and delivers real-time emotion insights.",
+        shortDescription: "A real-time computer vision application that analyzes facial expressions through a webcam and predicts human emotions using a MobileNetV2-based deep learning model.",
+        description: "A real-time computer vision application that analyzes facial expressions through a webcam and accurately predicts human emotions using a MobileNetV2-based deep learning model. By combining face detection with transfer learning, the system provides instant emotion recognition, making it suitable for human-computer interaction, behavioral analysis, and AI-powered user experience applications.",
         logoImage: LOGOS.SrinivasLogo,
         previewImage: SCREENSHOTS.EmotionDetectionShots,
         deviceMockupImage: SCREENSHOTS.EmotionDetectionShots,
@@ -293,11 +325,18 @@ export const PROJECTS_LIST: IProject[] = [
         sourceUrl: "https://github.com/Divyanshu-hash/Real-Time-Emotion-Detection",
         technologies: [
             TECH_STACK.Python,
-            TECH_STACK.Reactjs
+            TECH_STACK.OpenCV,
+            TECH_STACK.TensorFlow,
         ],
         features: [
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "Real-Time Emotion Recognition",
+                description: "Captures live video from a webcam, detects faces instantly, and classifies emotions such as Happy, Sad, Angry, Fear, Surprise, Neutral, and Disgust with real-time visual feedback."
+            },
+            {
+                title: "Efficient Deep Learning Pipeline",
+                description: "Leverages transfer learning with MobileNetV2 to deliver fast and accurate emotion predictions while maintaining lightweight performance suitable for real-time applications on standard hardware."
+            },
         ],
         logoSize: 50,
         versions: []

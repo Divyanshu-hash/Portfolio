@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { CheckIcon, ClipboardCopyIcon, ExternalLinkIcon } from 'lucide-react';
 import CenterTitle from '@/components/UI/CenterTitle';
@@ -7,9 +7,14 @@ import { PROJECTS_LIST } from '@/config/ProjectsList';
 
 export default function ProjectDetails() {
   const { projectID } = useParams();
-  
+
   const [emailCopied, setEmailCopied] = useState(false);
   const [passCopied, setPassCopied] = useState(false);
+
+  // Scroll to top whenever the project page is opened
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [projectID]);
 
   // Find the project
   const project = PROJECTS_LIST.find(
@@ -161,9 +166,38 @@ export default function ProjectDetails() {
           )}
 
           {/* Project Description */}
-          <p className="w-full text-justify text-[1.1em] mt-4 px-4 indent-12">
-            {project.description}
-          </p>
+          <div className="Fade_Up w-full mt-6 px-2 md:px-4">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-md p-6 transition-all duration-500 hover:border-primary/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+
+              {/* Gradient Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-50" />
+
+              {/* Header */}
+              <div className="relative flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-primary/10 border border-primary/20">
+                  <span className="text-lg">🚀</span>
+                </div>
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">
+                    Project Overview
+                  </p>
+
+                  <h3 className="text-lg font-bold mt-1">
+                    About the Project
+                  </h3>
+                </div>
+              </div>
+
+              {/* Content */}
+              <p className="relative text-[1rem] md:text-[1.05rem] leading-8 text-muted-foreground">
+                {project.description}
+              </p>
+
+              {/* Bottom Accent */}
+              <div className="mt-5 h-[2px] w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
+            </div>
+          </div>
         </div>
       </div>
 
